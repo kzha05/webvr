@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scales=1.0">
+    <title>VRPlayground</title>
+    <script src="js/aframe.min.js"></script>
+  </head>
+  <body>
+   
+  </body>
+   <a-scene stats>
+    <a-sky color="lightblue"></a-sky>
+    <a-camera>
+        <a-cursor color="black"></a-cursor>
+    </a-camera>
+    <a-box position="0 4 -20" color="red">
+         <a-sound src="sounds/459983__florianreichelt__rain-water-dripping-softly.mp3"  autoplay="true" postition="0 1 0"></a-sounds>
+    </a-box>
+    <a-box animation="property:position; pauseEvents:mouseenter; dir:alternate; resumeEvents:mouseleave; to:-5 -4 0; dur:8000; loop:true; " position="-5 4 0" color="green"></a-box>
+    <a-box animation="property:rotation; to:0 360 0; resumeEvents:mouseenter; autoplay:false; duration:5000; easing:linear; loop:true; "  src="img/marble.png" position="3 2 -4" ></a-box>
+
+    <a-sphere position="0 10 0" color="orange"></a-sphere>
+    <a-sphere animation="property: color; to:#00FF00; duration:3000; easing:linear" position="-3 4 -4" color="blue"></a-sphere>
+
+    <a-plane rotation="-90 0 0" position="-3 -2 -8" color="orange" height="30" width="30"></a-plane>
+   </a-scene>
+   
+</html>
